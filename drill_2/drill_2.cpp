@@ -12,7 +12,7 @@ using namespace Graph_lib;
 
 Point topleft{100,100};
 
-Simple_window win{topleft,800,1000,"Rács"};
+Simple_window win{topleft,800,1000,"Definetly not rickroll"};
 
 //Grid
 
