@@ -14,7 +14,7 @@ using namespace Graph_lib;
 Point topleft{100,100};
 
 Simple_window ablak {topleft, 1280,720, "Canvas"};
-ablak.set_label("Vászon lol");
+ablak.set_label("Vászon asszem");
 // Ablak átnevezés
 
 
