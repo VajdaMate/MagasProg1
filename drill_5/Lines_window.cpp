@@ -8,12 +8,12 @@ Lines_window::Lines_window(Point xy, int w, int h, const string& title) :
     next_y{Point{x_max()-210,0}, 50, 20, "next y:"},
     xy_out{Point{100,0}, 100, 20, "current (x,y):"},
 
-    color_menu{Point{x_max()-80,30},80,30,Menu::vertical,"color"},
-    style_menu{Point{x_max()-160,160},160,40,Menu::vertical,"line style"},
+    color_menu{Point{x_max()-80,40},80,40,Menu::vertical,"color"},
+    style_menu{Point{x_max()-80,160},80,40,Menu::vertical,"line style"},
 
-    color_button{Point{x_max()-80,30}, 80, 30, "color menu", 
+    color_button{Point{x_max()-80,40}, 80, 40, "color menu", 
     [](Address, Address pw) {reference_to<Lines_window>(pw).cmenu_pressed();}},
-    style_button{Point{x_max()-160,160},160,40,"style menu", 
+    style_button{Point{x_max()-80,160},80,40,"style menu", 
     [](Address, Address pw) {reference_to<Lines_window>(pw).smenu_pressed();}}
 {
     attach(next_button);
