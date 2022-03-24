@@ -22,6 +22,8 @@ private:
 
 	void hide_cmenu() { color_menu.hide(); color_button.show(); }
 	void hide_smenu() { style_menu.hide(); style_button.show(); }
+	void cmenu_pressed() { color_button.hide(); color_menu.show(); }
+	void smenu_pressed() { style_button.hide(); style_menu.show(); }
 
 	void red_pressed() { changec(Color::red); hide_cmenu(); }
 	void blue_pressed() { changec(Color::blue); hide_cmenu(); }
@@ -31,8 +33,7 @@ private:
     void dash_pressed() { changes(Line_style::dash); hide_smenu(); }
     void solid_pressed() { changes(Line_style::solid); hide_smenu(); }
 
-	void cmenu_pressed() { color_button.hide(); color_menu.show(); }
-	void smenu_pressed() { style_button.hide(); style_menu.show(); }
+	
 
 	void next();
 	void quit();
