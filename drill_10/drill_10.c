@@ -1,23 +1,19 @@
-#include <stdlib.h>
+
 #include <stdio.h>
 
-void print_out(const char* p, const int x)
+void print_out(char p[], int x)
 {
-    printf("p is\"%s\" and x is %i\n", p, x);
+    printf("p is %s and x is %d\n", p, x);
 }
 
 int main()
 {
-    /* Ex 1 */
     printf("Hello World!\n");
 
-    /* Ex 2 */
-    char* first = "Hello";
-    char* last = "World!";
-    printf("%s %s\n", first, last);
+    char elso[] = "Hello";
+    char masodik[] = "World!";
+    printf("%s %s\n", elso, masodik);
 
-    /* Ex 3 */
-    print_out("May", 6);
-    print_out("Chris", 39);
-    print_out("C", 89);
+    print_out("foo", 7);
     return 0;
+}
